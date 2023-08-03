@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="smart login system using crud " />
+    <meta name="keywords" content="html,css,bootstrap,js,crud" />
+    <link rel="icon" href="images/login-icon-3058.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Login System</title>
+  </head>
+
+  <body>
+    <section id="home">
+      <div
+        class="container h-100 d-flex justify-content-center align-items-center"
+      >
+        <div class="row w-100 px-2">
+          <div class="col-12 py-5 px-5">
+            <div class="item text-center">
+              <h1>smart login system</h1>
+              <div class="form-group my-5">
+                <form action="" method="post">
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    id="user-name"
+                    class="form-control my-2 text-white"
+                    autocomplete="off"
+                  />
+                  <div
+                    id="userNameAlert"
+                    class="alert alert-danger pb-0 pt-3 d-none"
+                  >
+                    <p>
+                      include at least 3 letters starting with capital, second
+                      name is obtional
+                    </p>
+                  </div>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    id="user-email"
+                    class="form-control my-2 text-white"
+                    autocomplete="off"
+                  />
+                  <div
+                    id="userEmailAlert"
+                    class="alert alert-danger pb-0 pt-3 d-none"
+                  >
+                    <p>ex: &nbsp; &nbsp; name@example.com</p>
+                  </div>
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    id="user-password"
+                    class="form-control my-2 text-white"
+                  />
+                  <div
+                    id="userPasswordAlert"
+                    class="alert alert-danger pb-0 pt-3 d-none"
+                  >
+                    <p>
+                      you must strenth your password, from 5 to 15 characters
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <div class="msgs text-center">
+                <p class="text-success d-none" id="confirmMsg">Success</p>
+                <p class="text-danger d-none" id="accountExistMsg">
+                  this account is exist ! Try another one.
+                </p>
+                <p class="text-danger d-none" id="tryAgainMsg">
+                  signUp failed ! Try again
+                </p>
+              </div>
+              <a
+                onclick="signup()"
+                id="signupBtn"
+                class="form-control mb-3 btn btn-info login bg-transparent"
+                >Sign Up</a
+              >
+              <p>
+                You have an acount?
+                <a href="index.html" class="signup"> &nbsp; Sign In </a>
+              </p>
+              <a
+                href="index.html"
+                class="d-none btn btn-outline-success text-white w-25 m-auto"
+                id="signin"
+                >signin</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
